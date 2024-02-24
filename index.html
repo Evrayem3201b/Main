@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Evrayem CV</title>
+    <script src="script.js" defer></script>
+    <style>
+      main{
+        letter-spacing: 1px;
+        font-family: 'ITC';
+        padding-bottom: 3rem;
+      }
+      .under-the-chevron{
+        display: none;
+      }
+      .under-the-chevron.appearing{
+        display: block;
+      }
+      .my-photo{
+        height: 270px;
+        width: 270px;
+        float: left;
+        border-radius: 50%;
+        padding: 4px;
+        border: 2px solid #ec6b5b;
+        margin-right: 30px;
+        margin-bottom: 10px;
+      }
+
+      .underline-name{
+        font-family: 'Lemon';
+        font-weight: 900;
+        font-size: 2rem;
+        position: relative;
+        padding-bottom: 4px;
+        z-index: -3;
+      }
+      .details-header{
+        font-weight: 900;
+        margin-block: 10px;
+        font-size: 1.7rem;
+        cursor: pointer;
+        width: initial;
+      }
+      .chevron{
+        width: 17px;
+        transform: rotate(0deg);
+        cursor: pointer;
+      }
+      .chevron.rotate{
+        transform: rotate(180deg);
+      }
+      .profile{
+        font-size: 1.44rem;
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      .label{
+        font-weight: 900;
+        font-size: 1.2rem;
+      }
+     
+      .under-the-chevron.appearing{
+        animation: opacity-in 0s forwards ease;
+        opacity: 0;
+      }
+      .under-the-chevron{
+        animation: opacity-out 0s forwards ease;
+        opacity: 1;
+      }
+      @media screen and (width > 810px){
+        .rest-container-p{
+          padding-bottom: 8rem;
+        }
+      }
+      @media screen and (width < 365px) {
+        .underline-name{
+          font-size: 1.7rem;
+        }
+        .my-photo{
+          margin-right: 0;
+          margin-bottom: 20px;
+        }
+      }
+      @media screen and (365px < width < 810px) {
+        
+        .rest-container{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+        }
+        .my-photo{
+          height: 130px;
+          width: 130px;
+          position: relative;
+          z-index: -3;
+          float: none;
+          margin: 0;
+          margin-right: 20px;
+        }
+
+        .underline-name{
+          font-size: 2rem;
+        }
+        .h1-text{
+          width: 500px;
+          display: flex;
+          justify-content: start;
+          margin: 0;
+        }
+        .rest-container-header{
+          display: flex;
+          align-items: center;
+        }
+      }
+    </style>
+</head>
+<body id="all-body" class="body">
+  <nav class="navMain" id="navMain">
+    <div class="list-header">
+      <div class="my-name"><input type="checkbox" name="check" id="check">
+        <label for="check" class="button"></label>
+        <div class="code-name">
+          <span class="my-name-span">Evrayem</span>
+        </div> 
+        <div class="bars-container">
+          
+          <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" id="bars">
+            <path
+            class="line top"
+              d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+        <path
+              class="line middle"
+              d="m 30,50 h 40" />
+        <path
+              class="line bottom"
+              d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+      </svg>
+    </div>
+  </div>
+  <div class="nav-cont-desk-main">
+    <div class="nav-container-desktop" id="navContainerDesk">
+      <li class="active">
+        <a href="index.html"><span id="home">Home</span></a>
+      </li>
+      <li>
+        <a href="blogs.html"><span id="blog">My Projects</span></a>
+      </li>
+      <li>
+        <a href="about.html"><span id="about">About Me</span></a>
+      </li>
+      <input type="checkbox" name="check" id="check-desk">
+      <label for="check-desk" class="button-desktop"></label>
+    </div>
+  </div>
+</div>
+<ul class="nav-list" id="navClass">
+  <div class="nav-container" id="navContainer">
+          <li class="active">
+            <a href="index.html"><span id="home">Home</span></a>
+          </li>
+          <li>
+            <a href="blogs.html"><span id="blog">My Projects</span></a>
+          </li>
+          <li>
+            <a href="about.html"><span id="about">About Me</span></a>
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <main style="padding-top: 5rem;">
+        <div class="rest-container">
+          <div class="rest-container-header">
+            <img class="my-photo" src="my profile.jpg" alt="my photo">
+            <h1 class="h1-text"><div class="underline-name">Hi, <span style="color: #ffb874;">I'm Evrayem</span></div></h1>
+            
+            </div>
+            <p class="rest-container-p">I am a <big style="color: #ec6b5b;">Front-End Developer</big> with a proven ability to collaborate effectively with senior developers while spending extra time to be mentore.</p>
+            <h2 class="details-header">More detailes <img class="chevron active" id="chevron" src="chevron down.svg" alt="chevron down icon"></h2>
+            <br>
+            <div class="under-the-chevron">
+              <h3 class="profile">Profile</h3>
+              <label for="label" class="label">Full Name</label>
+              <hr width="100%" color="grey">
+              <label for="name" class="name">Evrayem Beshoy Magdy</label>
+              <br><br>
+              <label for="label" class="label">Born</label>
+              <hr width="100%" color="grey">
+              <label for="born" class="name">20 May 2010, Egypt</label>
+              <br><br>
+              <label for="label" class="label">Skills</label>
+              <hr width="100%" color="grey">
+              <p><i class="fa-brands fa-html5" style="color: #FFD43B;"></i> HTML5</p>
+              <p><i class="fa-brands fa-css3-alt" style="color: #FFD43B;"></i> CSS3</p>
+              <p><i class="fa-brands fa-js" style="color: #FFD43B;"></i> JAVASCRIPT</p>
+              <p><i class="fa-brands fa-react" style="color: #FFD43B;"></i> REACT</p>
+              <br><br>
+              <label for="Learned" class="label">Learned with excellence</label>
+              <hr width="100%" color="grey">
+              <label for="learned" class="learned">HTML: Scematic HTML</label><br><br>
+              <label for="learned" class="learned">CSS: Psuedo elements</label><br><br>
+              <label for="learned" class="learned">JAVASCRIPT: Functions and Methods</label><br><br>
+              <label for="learned" class="learned">Excellent problem-solving skills</label><br><br>
+              <label for="learned" class="learned">Excellent communication skills</label><br><br>
+            </div>
+          </div>
+        </main>
+    <script src="https://kit.fontawesome.com/c04a7d2f38.js" crossorigin="anonymous"></script>
+</body>
+</html>
